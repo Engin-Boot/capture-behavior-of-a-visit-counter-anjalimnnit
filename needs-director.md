@@ -1,19 +1,17 @@
 # Visit-counter for a Director
 
-Scenario: Show patient visits during working days and holidays
+## Scenario: Show patient visits during working days and holidays
 
-  Given A person visits the hospital, the sensor for fall foot counter woks properly
+Given A person visits the hospital, the entry card issuer issues separate card for the visitor and attendant.
 
-  When a person enters through the sensor
+When a person enters through the sensor
 
-  Then increment the no of entries by 1 and display on the report for that day.
-  
-  Beds, seating arrangement, parking lot provided accordingly.
+Then if visitor has a patient card then increment visitor count by 1.
 
-Scenario: Compute parking slots to reserve for visiting specialists
+## Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given Specialist visits the hospital and the entry card issuer sensor works properly
+Given Specialist visits the hospital and has planned visit beforehand
 
-  When Specialist passes through the sensor
+When Specialist enters the parking
 
-  Then Compute and Reserve a parking slot for the specialist visiting the hospital.
+Then a space is already reserved for parking.
