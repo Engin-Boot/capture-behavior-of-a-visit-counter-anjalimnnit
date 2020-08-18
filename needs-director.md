@@ -6,7 +6,9 @@ Scenario: Show patient visits during working days and holidays
 
   When a person enters through the sensor
 
-  Then increment the no of entries by 1, aggregate the total and display on the report for that day. Beds, seating arrangement, parking lot provided accordingly.
+  Then increment the no of entries by 1, aggregate the total and display on the report for that day.
+  
+  Beds, seating arrangement, parking lot provided accordingly.
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
