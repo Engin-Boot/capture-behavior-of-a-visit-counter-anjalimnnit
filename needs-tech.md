@@ -4,9 +4,9 @@ Scenario: Recover across restarts of the server
 that runs the visit-counter
 
 Given foot-fall sensor at the door is working
- 
+
 When the server restarts
- 
+
 Then continue with the previous counter
 
 Scenario: Reconcile counts if the sensor is offline for a while
