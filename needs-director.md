@@ -8,7 +8,7 @@ the entry card issuer issues separate card for the visitor and attendant.
 
 When a person enters through the sensor
 
-Then if visitor has a patient card then increment visitor count by 1.
+Then increament the visitor count by 1 for each card.
 
 ## Scenario: Compute parking slots to reserve for visiting specialists
 
