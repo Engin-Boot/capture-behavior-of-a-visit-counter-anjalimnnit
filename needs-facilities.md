@@ -8,6 +8,10 @@ Scenario: Report visitor trends during a week of operation
 
 Scenario: Alert when seating capacity is full
 
-  Given
-  When
-  Then
+Given : Visitors are entering the hospital.
+
+When : The no of visitors is equal the seating capacity
+
+Then : Seating capacity full- Alert sent to Facilities manager and
+       
+Facility manager arranges more seats according to requirement. 
