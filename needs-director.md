@@ -2,12 +2,16 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given
-  When
-  Then
+  Given A person visits the hospital, the sensor for fall foot counter woks properly
+
+  When a person enters through the sensor
+
+  Then increment the no of entries by 1, aggregate the total and display on the report for that day. Beds, seating arrangement, parking lot provided accordingly.
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given
-  When
-  Then
+  Given Specialist visits the hospital and the entry card issuer sensor works properly
+
+  When Specialist passes through the sensor
+
+  Then Compute and Reserve a parking slot for the specialist visiting the hospital.
