@@ -6,7 +6,7 @@ Given the report of visitor is being maintained
   
 When The data for a week is collected
   
-Then analyse the data and display the visitor trends.
+Then analyse the data and display visitor trends.
 
 ## Scenario: Alert when seating capacity is full
 
