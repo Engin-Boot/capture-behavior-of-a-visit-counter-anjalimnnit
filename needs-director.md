@@ -2,7 +2,9 @@
 
 ## Scenario: Show patient visits during working days and holidays
 
-Given A person visits the hospital, the entry card issuer issues separate card for the visitor and attendant.
+Given A person visits the hospital,
+
+the entry card issuer issues separate card for the visitor and attendant.
 
 When a person enters through the sensor
 
